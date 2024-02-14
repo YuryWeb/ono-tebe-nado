@@ -176,7 +176,8 @@
 /* СЕКЦИЯ карточек */
 
 .lots {
-    margin: 0 31px 177px;
+    margin: 0 auto 146px;
+    width: 1052px;
 }
 
 .lots__heading {
@@ -185,7 +186,7 @@
     font-weight: 700;
     text-transform: uppercase;
     line-height: 46.96px;
-    margin-left: 37px;
+    margin-left: 40px;
     margin-bottom: 27px;
 }
 
@@ -196,7 +197,7 @@
     /* column-gap: 25px; */
     gap: 25px; /* если карточек будет больше, будет отступ при переносе */
     list-style-type: none;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     
 }
 
@@ -212,16 +213,15 @@
 
 .card {
     /* width: 328px; */
-    height: 554px;
+    height: 563px;
     width: 100%;
-    padding: 48px 36px 46px;
+    padding: 51px 40px 48px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
-    
 }
 
 .card::before {
@@ -275,7 +275,6 @@
     line-height: 24px;
     text-transform: lowercase;
     padding-left: 39px;
-    border-bottom: 1px solid #000;
 }
 
 /* END - БЛОК карточек */
@@ -283,19 +282,12 @@
 /* СЕКЦИЯ - Об аукционе */
 
 .about {
-    width: 1082px;
-    height: 546px;
-    margin: 0 auto 181px;
-    padding-top: 35px;
+    margin: 0 auto 180px;
+    width: 1052px;
+    /* height: 595px; */
     padding-left: 47px;
     display: grid;
     grid-template-columns: 334px 1fr;
-    border: 1px solid #6b1515; /* Вспомогательная граница секции */
-}
-
-.about__column {
-
-
 }
 
 .about__logo {
@@ -303,13 +295,20 @@
     height: 240px;
     background-color: #000;
     border-radius: 50%;
+    margin-top: 35px;
+    /* padding: 64px 47px; */
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__logo-image {
     width: 148px;
     height: 114px;
+}
 
+.about__column {
+    padding: 136px 5px 0 0;
 }
 
 .about__title {
@@ -319,7 +318,6 @@
     font-weight: 700;
     line-height: 47px;
     text-transform: uppercase;
-    margin-top: 97px;
     margin-bottom: 100px;
 }
 
@@ -329,7 +327,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .about__text:last-child {
@@ -339,6 +337,7 @@
 /* FOOTER */
 
 .footer {
+    margin: 0 50px 88px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 180px;
