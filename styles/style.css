@@ -49,7 +49,6 @@
 }
 
 .header__logo {
-    display: block;
     display: flex;
     margin: auto;
 }
