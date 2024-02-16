@@ -99,8 +99,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1082px;
-    height: 744px;
+    width: 1100px;
+    height: 757px;
     margin: 0 auto 179px;
     padding: 165px 50px 0px;
     position: relative;
@@ -132,12 +132,16 @@
     display: flex;
     justify-content: start;
     line-height: 115px;
+    margin-bottom: 20px;
 }
 
 .aligned-text_center {
-    display: flex;
-    margin: auto;
+    display: block;
+    margin-left: 286px;
+    /* margin: auto; */
+    /* justify-content: center; */
     line-height: 100px;
+    margin-bottom: 20px;
 }
 
 .aligned-text_right {
@@ -165,7 +169,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    word-spacing: 15px;
+    word-spacing: 18px;
     color: rgba(255, 255, 255, 1);
     position: absolute;
     left: 80px;
@@ -177,14 +181,14 @@
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    line-height: 52px;
+    line-height: 50px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: transparent;
     border: 1px solid #ffffff;
-    padding: 0 30px;
+    padding: 0 31px;
     position: absolute;
-    right: 49px;
+    right: 50px;
     bottom: 48px;
 }
 
