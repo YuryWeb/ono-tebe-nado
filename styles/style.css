@@ -21,7 +21,7 @@
     font-weight: 400;
     line-height: 21.13px;
     color: #000;
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -371,7 +371,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 21.13px;
-    color: #000; 
+    color: #000;
 }
 
 .footer__menu-list-item {
@@ -388,7 +388,7 @@
 }
 
 /* --- FOOTER - Блок социальных иконок --- */
-.footer__social { 
+.footer__social {
     width: 237px;
     height: 48px;
 }
