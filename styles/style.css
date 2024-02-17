@@ -6,12 +6,13 @@
     grid-template-columns: 1fr 148px 1fr;
     margin: 92px auto 96px;
     width: 1052px;
-    height: 105px;
+    min-height: 105px;
 }
 
 .header__menu {
     display: flex;
-    justify-content: start;
+    /* justify-content: start; */
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     font-style: normal;
@@ -25,11 +26,11 @@
 .header__links-list {
     display: flex;
     list-style-type: none;
+    column-gap: 30px;
 }
 
 .header__links-list-item {
     list-style: circle;
-    margin-left: 30px;
 }
 
 .header__links-list-item_no-bullit {
@@ -61,25 +62,24 @@
     height: 104px;
 }
 
-.header__address {
+.address {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-self: end;
-    width: 240px;
+    min-width: 240px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24.3px;
-    margin-right: 26px;
     text-underline-position: under;
 }
 
-.address {
-    font-style: normal;
+.header__address {
+    justify-self: end;
+    margin-right: 26px;
 }
 
-.intro__tel {
+.intro__non-breaking {
     white-space: nowrap;
 }
 
@@ -93,7 +93,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     margin: 0 auto 179px;
     padding: 165px 50px 0px;
     position: relative;
@@ -171,6 +171,7 @@
 }
 
 .bet-button {
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -178,7 +179,7 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid currentColor;
     padding: 0 31px;
     position: absolute;
     right: 50px;
@@ -225,7 +226,7 @@
 
 .card {
     /* width: 328px; */
-    height: 563px;
+    min-height: 563px;
     width: 100%;
     padding: 51px 40px 48px;
     background-position: center;
@@ -390,14 +391,13 @@
 }
 
 /* --- FOOTER - Блок социальных иконок --- */
-.footer__social {
-    width: 237px;
-    height: 48px;
-}
 
 .footer__social-list {
     display: flex;
     justify-content: space-between;
+    column-gap: 48px;
+    height: 48px;
+    box-sizing: border-box;
 }
 
 .footer__social-list-item {
