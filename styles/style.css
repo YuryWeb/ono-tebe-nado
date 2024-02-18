@@ -365,7 +365,7 @@
 }
 
 .footer__menu-link {
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid #000;
     text-decoration: none;
 }
 
@@ -379,7 +379,7 @@
     display: flex;
     justify-content: space-between;
     column-gap: 48px;
-    height: 48px;
+    min-height: 48px;
     box-sizing: border-box;
 }
 
