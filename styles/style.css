@@ -11,7 +11,6 @@
 
 .header__menu {
     display: flex;
-    /* justify-content: start; */
     justify-content: center;
     align-items: center;
     font-size: 18px;
@@ -59,7 +58,6 @@
 .header__logo-image {
     display: block;
     margin: auto;
-    /* width: 129px; */
     height: 105px;
 }
 
@@ -101,17 +99,6 @@
     position: relative;
 }
 
-/* Исключение свойства overlay псевдоэлементом */
-/* .cover::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-} */
-
 .overlay {
     width: 100%;
     height: 100%;
@@ -121,9 +108,6 @@
 }
 
 .cover__title {
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* width: 100%; */
     margin: 165px 50px 135px;
     font-style: normal;
     font-weight: 700;
@@ -134,26 +118,27 @@
     position: relative;
 }
 
+.aligned-text__bottom {
+    margin-bottom: 20px;
+}
+
+.aligned-text__bottom:last-child {
+    margin-bottom: 0;
+}
+
 .aligned-text {
     display: block;
-    /* display: flex;
-    justify-content: start; */
     line-height: 115px;
-    /* margin-top: 165px; */
-    margin-bottom: 20px;
 }
 
 .aligned-text_center {
     display: block;
-    /* margin: auto; */
     text-align: center; 
     line-height: 100px;
-    margin-bottom: 20px;
 }
 
 .aligned-text_right {
     display: block;
-    /* justify-content: end; */
     line-height: 100px;
     text-align: right;
 }
@@ -182,11 +167,8 @@
     font-size: 22px;
     line-height: 28px;
     word-spacing: 18.5px;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     text-transform: uppercase;    
-    /* position: absolute;
-    left: 80px;
-    bottom: 60px; */
 }
 
 .bet-button {
@@ -200,9 +182,6 @@
     background-color: transparent;
     border: 1px solid currentColor;
     padding: 0 31px;
-    /* position: absolute;
-    right: 50px;
-    bottom: 48px; */
 }
 
 /* END - СЕКЦИЯ COVER */
@@ -228,7 +207,6 @@
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
     grid-template-columns: repeat(auto-fill, minmax(328px, 1fr));
-    /* column-gap: 25px; */
     gap: 25px; /* если карточек будет больше, будет отступ при переносе */
     margin-bottom: 30px;
 }
@@ -243,10 +221,8 @@
 }
 
 .card {
-    /* width: 328px; */
     min-height: 563px;
     width: 100%;
-    /* padding: 51px 40px 48px; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -254,16 +230,6 @@
     display: flex;
     flex-direction: column;
 }
-
-/* .card::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-} */
 
 .card_type_film {
     background-image: url(./../images/card-lot-01.jpg);
