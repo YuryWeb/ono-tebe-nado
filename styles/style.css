@@ -17,16 +17,16 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 21.13px;
     color: #000;
     margin: 0;
-    padding: 0;
+    padding: 0 10px 0 0;
 }
 
 .header__links-list {
     display: flex;
     list-style-type: none;
-    column-gap: 30px;
+    gap: 32px;
 }
 
 .header__links-list-item {
@@ -38,7 +38,7 @@
 }
 
 .header__links-list-item_extended {
-    letter-spacing: 0.18px;
+    letter-spacing: 0.2px;
 }
 
 .header__link {
@@ -53,13 +53,14 @@
 .header__logo {
     display: flex;
     margin: auto;
+    width: 100%;
 }
 
 .header__logo-image {
     display: block;
     margin: auto;
-    width: 128px;
-    height: 104px;
+    /* width: 129px; */
+    height: 105px;
 }
 
 .address {
@@ -92,13 +93,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1100px;
+    /* width: 1100px; ширина родителя в global.css */
     min-height: 757px;
     margin: 0 auto 179px;
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 
+/* Исключение свойства overlay псевдоэлементом */
 /* .cover::before {
     content: "";
     position: absolute;
@@ -118,22 +121,23 @@
 }
 
 .cover__title {
-    display: flex;
-    flex-direction: column;
-    margin: 165px 50px 126px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* width: 100%; */
+    margin: 165px 50px 135px;
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 30px;
-    
     position: relative;
 }
 
 .aligned-text {
-    display: flex;
-    justify-content: start;
+    display: block;
+    /* display: flex;
+    justify-content: start; */
     line-height: 115px;
     /* margin-top: 165px; */
     margin-bottom: 20px;
@@ -141,18 +145,17 @@
 
 .aligned-text_center {
     display: block;
-    /* margin-left: 286px; */
-    margin: auto;
-    justify-content: center;
-    text-align: center;
+    /* margin: auto; */
+    text-align: center; 
     line-height: 100px;
     margin-bottom: 20px;
 }
 
 .aligned-text_right {
-    display: flex;
-    justify-content: end;
+    display: block;
+    /* justify-content: end; */
     line-height: 100px;
+    text-align: right;
 }
 
 .letter-spacing-extended {
@@ -167,6 +170,10 @@
 
 .cover__description {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    margin: 0 50px 0 78px;
 }
 
 .cover__description-text {
@@ -174,12 +181,12 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    word-spacing: 18px;
+    word-spacing: 18.5px;
     color: rgba(255, 255, 255, 1);
-    position: absolute;
+    text-transform: uppercase;    
+    /* position: absolute;
     left: 80px;
-    bottom: 60px;
-    text-transform: uppercase;
+    bottom: 60px; */
 }
 
 .bet-button {
@@ -193,13 +200,12 @@
     background-color: transparent;
     border: 1px solid currentColor;
     padding: 0 31px;
-    position: absolute;
+    /* position: absolute;
     right: 50px;
-    bottom: 48px;
+    bottom: 48px; */
 }
 
 /* END - СЕКЦИЯ COVER */
-
 
 /* СЕКЦИЯ LOTS с карточками */
 
@@ -290,7 +296,7 @@
     font-weight: 400;
     line-height: 24px;
     position: relative;
-    margin-top: auto;
+    margin: auto 40px 48px;
 }
 
 .lots__look-more-link {
@@ -344,7 +350,7 @@
     font-weight: 700;
     line-height: 47px;
     text-transform: uppercase;
-    margin-bottom: 102px;
+    margin-bottom: 100px;
 }
 
 .about__text {
